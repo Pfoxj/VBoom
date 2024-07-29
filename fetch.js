@@ -16,7 +16,7 @@ async function sendMessage() {
             const client = await Client.connect("PfoxjDev/VBoom");
             const result = await client.predict("/chat", {
                 message: message,
-                system_message: message,
+                system_message: "Hello!!",
                 max_tokens: 1,
                 temperature: 0.1,
                 top_p: 0.1,
